@@ -65,6 +65,26 @@
     <artifactId>validation-api</artifactId>
    
 </dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto -->
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-crypto</artifactId>
+</dependency>
+
+
+
+        
+
+<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api-osgi -->
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api-osgi</artifactId>
+    <version>2.2.7</version>
+</dependency>
+
+        
 		
 		
   		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -82,6 +102,23 @@
     <artifactId>HikariCP</artifactId>
     </dependency>
 
+
+
+    <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+    
 		
 		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->		
 		

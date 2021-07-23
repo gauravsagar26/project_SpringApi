@@ -4,3 +4,8 @@ create table person (
    path varchar(100)
 
 );
+
+create table personverify(
+    username varchar(50), 
+    password varchar(100)
+);

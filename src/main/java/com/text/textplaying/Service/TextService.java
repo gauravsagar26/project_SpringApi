@@ -12,51 +12,34 @@ import com.text.textplaying.Dao.TextDao;
 @Service
 public class TextService {
 
-	   
-	  private final TextDao textdao;
+	private final TextDao textdao;
 
-    @Autowired
+	@Autowired
 	public TextService(TextDao textdao) {
 		this.textdao = textdao;
 	}
-	  
-	
-	 public String inserttext(String UserPass, String Filename, String Txtvalue)
-	 {
-		 
-		 return this.textdao.inserttext(UserPass,Filename,Txtvalue);
-	 }
-	 
-	 
-	 public List<String> getmyfiles(String UserPass)
-	 {
-		 
-		 return this.textdao.getmyfiles(UserPass);
-	 }
-	 
-	 public String readfile(String UserPass , String Filename)
-		{
-		  return this.textdao.readfile(UserPass, Filename);
-			
-		}
 
-	  
-	 
-   	 public String deletefile(String user, String Filename)
-	 {
-		 
-		 return this.textdao.deletefile(user,Filename);
-	 }
-	 
-	 public String update(String user, String Filename , String str)
-	 {
-		 
-		 return this.textdao.update(user, Filename , str);
-				 
-	 }
-	 
-	 public String register(String usrpas) {
-		 
-		 return this.textdao.register(usrpas);
-	 }
+	public String inserttext(String userPass, String fileName, String txtValue) {
+		return this.textdao.inserttext(userPass, fileName, txtValue);
+	}
+
+	public List<String> getmyfiles(String userPass) {
+		return this.textdao.getmyfiles(userPass);
+	}
+
+	public String readfile(String userPass, String fileName) {
+		return this.textdao.readfile(userPass, fileName);
+	}
+
+	public String deletefile(String userPass, String fileName) {
+		return this.textdao.deletefile(userPass, fileName);
+	}
+
+	public String update(String userPass, String fileName, String txtValue) {
+		return this.textdao.update(userPass, fileName, txtValue);
+	}
+
+	public String register(String userPas) {
+		return this.textdao.register(userPas);
+	}
 }
